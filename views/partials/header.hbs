@@ -1,0 +1,171 @@
+
+    <div class="loader-wrap">
+        <div class="preloader">
+            <div class="preloader-close">Preloader Close</div>
+        </div>
+        <div class="layer layer-one"><span class="overlay"></span></div>
+        <div class="layer layer-two"><span class="overlay"></span></div>
+        <div class="layer layer-three"><span class="overlay"></span></div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== OFFCANVAS MENU PART START ======-->
+
+    <div class="off_canvars_overlay">
+
+    </div>
+    <div class="offcanvas_menu">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="offcanvas-brand text-center mb-40">
+                            <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="menu-item-has-children active">
+                                    <a href="#service">Service</a>
+                                </li>
+                                <li class="menu-item-has-children active">
+                                    <a href="#features">Feature</a>
+                                </li>
+                                <li class="menu-item-has-children active">
+                                    <a href="#testimonial">Testimonial</a>
+                                </li>
+                                <li class="menu-item-has-children active">
+                                    <a href="#">News</a>
+                                </li>
+                                <li class="menu-item-has-children active">
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offcanvas-social">
+                            <ul class="text-center">
+                                <li><a href="%24.html"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="%24.html"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="%24.html"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="%24.html"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget-info">
+                            <ul>
+                                <li><a href="#"><i class="fal fa-envelope"></i> support@appie.com</a></li>
+                                <li><a href="#"><i class="fal fa-phone"></i> +(642) 342 762 44</a></li>
+                                <li><a href="#"><i class="fal fa-map-marker-alt"></i> 442 Belle Terre St Floor 7, San
+                                        Francisco, AV 4206</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== OFFCANVAS MENU PART ENDS ======-->
+
+    <!--====== SEARCH PART START ======-->
+
+    <div class="search-box">
+        <div class="search-header">
+            <div class="container mt-60">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="search-title"><img src="assets/images/logo-7.png" alt=""></h5> <!-- search title -->
+                    </div>
+                    <div class="col-6">
+                        <div class="search-close text-right">
+                            <button class="search-close-btn">Close <span></span><span></span></button>
+                        </div> <!-- search close -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- search header -->
+        <div class="search-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="search-form">
+                            <form action="#">
+                                <input type="text" placeholder="Search for Products">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- search body -->
+    </div>
+
+    <!--====== SEARCH PART ENDS ======-->
+
+    <!--====== SHOPPING CART PART START ======-->
+
+   {{>carts}}
+
+    <!--====== SHOPPING CART PART ENDS ======-->
+
+    <!--====== PART START ======-->
+
+    <header class="appie-header-area appie-sticky">
+        <div class="container">
+            <div class="header-nav-box header-nav-4-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-4 col-sm-5 col-6 order-1 order-sm-1">
+                        <div class="appie-logo-box">
+                            <a href="#">
+                                <img src="assets/images/logo-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-1 col-sm-1 order-3 order-sm-2">
+                        <div class="appie-header-main-menu">
+                            <ul>
+                                <li>
+                                    <a class="mymenu {{#if home}}active{{/if}} " href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a class="mymenu  {{#if services}}active{{/if}}" href="/services">Service</a>
+                                </li>
+                                <li>
+                                    <a href="/shop" class="mymenu  {{#if shop}}active{{/if}}">Shop</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="/about" class="mymenu  {{#if about}}active{{/if}}">About</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="/news" class="mymenu  {{#if news}}active{{/if}}">News</a>
+                                  
+                                </li>
+                                <li><a class="mymenu  {{#if contact}}active{{/if}}" href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-md-7 col-sm-6 col-6 order-2 order-sm-3">
+                        <div class="appie-btn-box text-right">
+                            <ul>
+                                <li><a class="search-open" href="#"><i class="fal fa-search text-white"></i></a></li>
+                                <li><a class="cart-btn amm-shopping-cart-open" href="#"><i
+                                            class="fal fa-shopping-cart text-white"></i> <span>2</span></a></li>
+                            </ul>
+                            <div class="toggle-btn ml-30 canvas_open d-lg-none d-block">
+                                <i class="fa fa-bars text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--====== PART ENDS ======-->
